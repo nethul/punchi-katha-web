@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Sparkles } from 'lucide-react';
 
 const Hero = () => {
@@ -27,10 +28,13 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button className="bg-[#E17B47] hover:bg-[#D16A36] text-white font-semibold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2">
+              <Link 
+                to="/create-book"
+                className="bg-[#E17B47] hover:bg-[#D16A36] text-white font-semibold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2"
+              >
                 <Sparkles className="w-5 h-5" />
                 Create Your Book
-              </button>
+              </Link>
               <button className="bg-white hover:bg-gray-50 text-gray-700 font-semibold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-gray-200">
                 Learn More
               </button>
